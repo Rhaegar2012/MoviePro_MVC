@@ -102,7 +102,6 @@ C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\obj\Debug\netcoreapp3.1\
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\obj\Debug\netcoreapp3.1\staticwebassets\MoviePro_MVC.StaticWebAssets.Manifest.cache
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\obj\Debug\netcoreapp3.1\staticwebassets\MoviePro_MVC.StaticWebAssets.xml
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\Npgsql.dll
-C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\MoviePro_MVC.deps.json
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\MoviePro_MVC.runtimeconfig.json
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\MoviePro_MVC.runtimeconfig.dev.json
@@ -392,3 +391,5 @@ C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
