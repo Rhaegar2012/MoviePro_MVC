@@ -6,23 +6,28 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using MoviePro_MVC5._0.Models.TMDB;
+using MoviePro_MVC5._0.Enums;
 
 namespace MoviePro_MVC5._0.Models.Database
 {
 
     public class Movie
     {
+        //Primary key
         public int Id { get; set; }
         public int MovieId { get; set; }
         public string Title { get; set; }
         public string TagLine { get; set; }
         public string Overview { get; set; }
+        public int RuntTime { get; set; }
         [DataType(DataType.Date)]
         [Display(Name="Release Date")]
         public DateTime ReleaseDate { get; set; }
         public MovieRating Rating { get; set; }
         public float VoteAverage { get; set; }
-        public  byte[] Backdrop { get; set; }
+        public  byte[] Poster { get; set; }
+        public string PosterType { get; set; }
+        public byte [] Backdrop { get; set; }
         public string BackdropType { get; set; }
         public string TrailerUrl { get; set; }
         [NotMapped]
@@ -31,10 +36,11 @@ namespace MoviePro_MVC5._0.Models.Database
         [NotMapped]
         [Display(Name="Backdrop Image")]
         public IFormFile BackdropFile { get; set; }
-        //Mapping properties
+        //Navigation properties
+        //Table children
         public ICollection<MovieCollection> Collections { get; set; } = new HashSet<MovieCollection>();
         public ICollection<MovieCast> Cast { get; set; } = new HashSet<MovieCast>();
-        public ICollection<MovieCrew> Cast { get; set; } = new HashSet<MovieCrew>();
+        public ICollection<MovieCrew> Crew { get; set; } = new HashSet<MovieCrew>();
 
     }
 }

@@ -1,4 +1,10 @@
 ﻿using System;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks; 
 
 namespace MoviePro_MVC5._0.Models.TMDB
 {
