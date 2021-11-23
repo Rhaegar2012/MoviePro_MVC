@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace MoviePro_MVC5._0.Services
 {
+    //Delivers database connection string regardless of database connection type 
     public class ConnectionService
     {
         public static string GetConnectionString(IConfiguration configuration)
