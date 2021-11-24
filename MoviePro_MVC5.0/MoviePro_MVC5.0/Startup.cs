@@ -36,6 +36,8 @@ namespace MoviePro_MVC5._0
             //Movie API service configuration 
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddDatabaseDeveloperPageExceptionFilter();
+            //Database seed service 
+            services.AddTransient<SeedService>();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
