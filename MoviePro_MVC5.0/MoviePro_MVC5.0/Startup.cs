@@ -36,12 +36,13 @@ namespace MoviePro_MVC5._0
             //Movie API service configuration 
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddDatabaseDeveloperPageExceptionFilter();
+            
+
+            services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddRazorPages();
+            services.AddControllersWithViews();
             //Database seed service 
             services.AddTransient<SeedService>();
-
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
