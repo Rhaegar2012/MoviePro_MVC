@@ -14,6 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MoviePro_MVC5._0.Services;
 using MoviePro_MVC5._0.Models.Settings;
+using MoviePro_MVC5._0.Services.Interfaces;
 
 namespace MoviePro_MVC5._0
 {
@@ -43,6 +44,9 @@ namespace MoviePro_MVC5._0
             services.AddControllersWithViews();
             //Database seed service 
             services.AddTransient<SeedService>();
+            //TMDB Movie service 
+            services.AddHttpClient();
+            services.AddScoped<IRemoteMovieService, TMDBMovieService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
