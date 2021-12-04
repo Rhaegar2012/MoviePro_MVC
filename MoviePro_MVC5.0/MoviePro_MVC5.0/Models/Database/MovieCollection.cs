@@ -2,14 +2,13 @@
 {
     public class MovieCollection
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         public int CollectionId { get; set; }
         public int MovieId { get; set; }
         public int Order { get; set; }
-        //Navigational properties 
+        //Navigational properties
         public Collection Collection { get; set; }
-        //Parent Property 
-        public Movie Movie  { get; set; }
-
+        //Parent property 
+        public Movie Movie { get; set; }
     }
 }
