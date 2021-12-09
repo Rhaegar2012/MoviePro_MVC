@@ -49,6 +49,8 @@ namespace MoviePro_MVC5._0
             services.AddScoped<IRemoteMovieService, TMDBMovieService>();
             //Basic Image Service
             services.AddSingleton<IImageService, BasicImageService>();
+            //Data mapping service
+            services.AddScoped<IDataMappingService, TMDBMappingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

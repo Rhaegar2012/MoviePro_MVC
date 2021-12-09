@@ -23,7 +23,7 @@ namespace MoviePro_MVC5._0.Services
         //Decodes image from database for display 
         public string DecodeImage(byte[] poster, string contentType)
         {
-            if (poster == null) return null;
+            if (poster is null) return null;
             var posterImage = Convert.ToBase64String(poster);
             return $"data:{contentType};base64,{posterImage}";
         }

@@ -394,3 +394,4 @@ C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC5.0\MoviePro_MVC5.0\obj\D
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC5.0\MoviePro_MVC5.0\obj\Debug\net5.0\ref\MoviePro_MVC5.0.dll
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC5.0\MoviePro_MVC5.0\obj\Debug\net5.0\MoviePro_MVC5.0.pdb
 C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC5.0\MoviePro_MVC5.0\obj\Debug\net5.0\MoviePro_MVC5.0.genruntimeconfig.cache
+C:\Users\joseb\Documents\Code\MoviePro_MVC\MoviePro_MVC5.0\MoviePro_MVC5.0\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
