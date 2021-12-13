@@ -57,6 +57,7 @@ namespace MoviePro_MVC5._0.Services
                     Overview = movie.overview,
                     RunTime = movie.runtime,
                     Backdrop = await EncodeBackdropImageAsync(movie.backdrop_path),
+                    Poster=await EncodePosterImageAsync(movie.poster_path),
                     PosterType = BuildImageType(movie.backdrop_path),
                     Rating = GetRating(movie.release_dates),
                     ReleaseDate = DateTime.Parse(movie.release_date),
@@ -65,18 +66,36 @@ namespace MoviePro_MVC5._0.Services
                 };
                 var castMembers = movie.credits.cast.OrderByDescending(c => c.popularity)
                                                     .GroupBy(c => c.cast_id)
-            
                                                     .Select(g => g.FirstOrDefault())
                                                     .Take(20).ToList();
                 castMembers.ForEach(member =>
                 {
-                newMovie.Crew.Add(new MovieCrew()
+                newMovie.Cast.Add(new MovieCast()
                     {
                         Id = member.id,
                         Department = member.known_for_department,
                         Name = member.name,
-                        Job = member.character,
+                        Character = member.character,
                         ImageUrl = BuildCastImage(member.profile_path),
+                      
+
+                    });
+                });
+
+                var crewMembers = movie.credits.crew.OrderByDescending(c => c.popularity)
+                                                  .GroupBy(c => c.id)
+                                                  .Select(g => g.FirstOrDefault())
+                                                  .Take(20).ToList();
+                crewMembers.ForEach(member =>
+                {
+                    newMovie.Crew.Add(new MovieCrew()
+                    {
+                        CrewID = member.id,
+                        Department = member.department,
+                        Name = member.name,
+                        Job = member.job,
+                        ImageUrl = BuildCastImage(member.profile_path),
+
 
                     });
                 });

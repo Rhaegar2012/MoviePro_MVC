@@ -226,6 +226,8 @@ namespace MoviePro_MVC5._0.Controllers
                 //Get the movie data straight from the DB
                 movie = await _context.Movie.Include(m => m.Cast)
                                           .Include(m => m.Crew)
+                                          .Include(m=> m.Poster)
+                                          .Include(m=>m.PosterType)
                                           .FirstOrDefaultAsync(m => m.Id == id);
             }
             else

@@ -40,8 +40,9 @@ namespace MoviePro_MVC5._0.Services
             //Step 4: Return the ActorDetail object
             if (response.IsSuccessStatusCode)
             {
-                using var responseStream = await response.Content.ReadAsStreamAsync();
+               
                 var dcjs = new DataContractJsonSerializer(typeof(ActorDetail));
+                using var responseStream = await response.Content.ReadAsStreamAsync();
                 actorDetail = (ActorDetail)dcjs.ReadObject(responseStream);
             }
 
